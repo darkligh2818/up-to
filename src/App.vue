@@ -1,30 +1,34 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div class="px-4 py-6 flex">
+    <div class="flex flex-col w-1/5">
+      <div>
+        <h1 class="text-2xl font-serif font-semibold text-slate-800">Vuetify Vazifa</h1>
+        <p class="font-bold text-slate-600 border-b-2">Eng yaxshi vazifalar boshqaruvi</p>
+      </div>
+      <div class="flex flex-col mt-4 space-y-2">
+        <router-link class="font-bold font-mono" to="/task"><button class="fa-solid fa-list-check mr-6"></button>Vazifalar</router-link>
+        <router-link class="font-bold font-mono" to="/about"><i class="fa-solid fa-question mr-6"></i>Haqida</router-link>
+      </div>
+     </div>
+      <div class="w-4/5">
+        <NavBar />
+    </div>
+  </div>
+<router-view></router-view>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+// @ is an alias to /src
+import NavBar from '@/components/NavBar.vue'
 
-nav {
-  padding: 30px;
+export default {
+  name: 'App',
+  components: {
+    NavBar
+  },
+  data() {
+    return {
+    }
+  }
 }
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+</script>
