@@ -1,14 +1,14 @@
 <template>
-    <div class="px-6 bg-gray-700 navbar opacity-60">
+    <div class="px-6 bg-gray-700 navbar opacity-80 rounded">
         <div class="flex justify-between py-2">
             <div>
-                <i class="fa-solid fa-bars text-white text-xl"></i>
+                <i class="fa-solid fa-bars text-white text-xl  duration-200  p-1 rounded-full px-2 hover:bg-gray-500"></i>
             </div>
             <div class="space-x-4">
-                <i class="fa-solid fa-magnifying-glass text-white text-xl"></i>
-                <i class="fa-solid fa-heart text-white text-xl"></i>
-                <i class="fa-solid fa-circle-half-stroke text-white text-xl"></i>
-                <i class="fa-solid fa-ellipsis-vertical text-white text-xl"></i>
+                <i class="fa-solid fa-magnifying-glass text-white text-xl  duration-200  p-1 rounded-full px-2 hover:bg-gray-500"></i>
+                <i class="fa-solid fa-heart text-white text-xl  duration-200  p-1 rounded-full px-2 hover:bg-gray-500"></i>
+                <i class="fa-solid fa-circle-half-stroke text-white text-xl  duration-200  p-1 rounded-full px-2 hover:bg-gray-500"></i>
+                <i class="fa-solid fa-ellipsis-vertical text-white text-xl  duration-200  p-1 rounded-full px-2 hover:bg-gray-500"></i>
             </div>
         </div>
         <div class="mt-14">
