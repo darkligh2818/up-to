@@ -28,13 +28,7 @@ export default {
   },
   data() {
     return {
-      color: 'bg-gray-400'
     }
   },
-  methods: {
-    activeColor() {
-      this.color;
-    }
-  }
 }
 </script>

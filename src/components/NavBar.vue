@@ -1,5 +1,5 @@
 <template>
-    <div class="px-6 bg-gray-700 navbar opacity-80 rounded">
+    <div class="px-6 bg-gray-700 navbar opacity-50 rounded">
         <div class="flex justify-between py-2">
             <div>
                 <i class="fa-solid fa-bars text-white text-xl  duration-200  p-1 rounded-full px-2 hover:bg-gray-500"></i>
