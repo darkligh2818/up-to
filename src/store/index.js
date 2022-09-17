@@ -2,27 +2,26 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
-    persons: [
-      "D"
+    todos: [
+      
     ],
-    removeX: false
   },
   getters: {
   },
   mutations: {
     GET_GOAL(state, foo) {
-      state.persons.push(foo)  
+      state.todos.push(foo)  
     },
-    GET_X(state) {
-      state.removeX = !state.removeX;
+    DELETE_GOAL(state, goal) {
+      state.todos.splice(goal, 1);
     },
   },
   actions: {
     getGoal(context, goal) {
       context.commit('GET_GOAL', goal)
     },
-    getX(context) {
-      context.commit('GET_X');
+    deleteGoal(context, goal) {
+      context.commit('DELETE_GOAL', goal);
     },
   },
   modules: {
